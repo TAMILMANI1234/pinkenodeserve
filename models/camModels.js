@@ -1,0 +1,122 @@
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema
+
+const camSchema=new Schema({
+    customer_id:{
+        type:String
+    },
+    cam_id:{
+        type :String
+    },
+    loan_id:{
+        type:String
+    },
+    branch_name:{
+        type:String
+    },
+    customer_name:{
+        type:String
+    },
+    field_agent_name:{
+        type:String
+    },
+    loan_amount:{
+        type:String
+    },
+    tenure_month:{
+        type:String
+    },
+    comment_loan_info:{
+        type:String
+    },
+    business_name:{
+        type:String
+    },
+    constitution_of_business:{
+        type:String
+    },
+    business_description:{
+        type:String
+    },
+    comment_business:{
+        type:String
+    },
+    daily_sales:{
+        type:String
+    },
+    monthly_sales:{
+        type:String
+    },
+    margin:{
+      type:String
+    },
+    gross_profit:{
+        type:String
+    },
+    comment_sales:{
+        type:String
+    },
+    spouse_income:{
+        type:String
+    },
+    child_income:{
+        type:String
+    },
+    other_income:{
+        type:String
+    },
+    total_other_income:{
+        type:String
+    },
+    total_income:{
+        type:String
+    },
+    comment_income:{
+        type:String
+    },
+    business_expenses:{
+        type:String
+    },
+    household_expenses:{
+        type:String
+    },
+    existing_emis:{
+        type:String
+    },
+    total_obligation:{
+        type:String
+    },
+    foir:{
+        type:String
+    },
+    comment_expenses:{
+        type:String
+    },
+    cam_report_prepared_by:{
+        type:String
+    },
+    cam_report_verified_by:{
+         type:String
+    },
+    business_head_visit_image:{
+        type:String,
+    },
+    area_manager_visit_image:{
+        type:String,
+    },
+    member_document_signing_image:{
+        type:String,
+    },
+    nominee_document_signing_image:{
+        type:String,
+    },
+    Business_area_image:{
+        type:String,
+    },
+
+
+
+})
+const CamModel= mongoose.model('verification',camSchema);
+
+module.exports= CamModel;
